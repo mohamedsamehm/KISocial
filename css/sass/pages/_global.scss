@@ -1,0 +1,150 @@
+/* Start Global*/
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+    background-image: linear-gradient(#FCFCFC, #FBFBFB);
+}
+
+ul {
+    padding: 0;
+}
+
+button,
+input,
+img {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+span.error {
+    width: 100%;
+    padding-left: 16px;
+    color: #dc3545;
+    margin-top: 10px;
+    display: block
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0!important;
+    overflow: hidden;
+    padding-top: 110px;
+    @media (max-width: 992px) {
+        padding-top: 20%;
+    }
+}
+
+.container {
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
+
+/* Feel free to change duration  */
+
+.animated {
+    -webkit-animation-duration: 1000 ms;
+    animation-duration: 1000 ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+/* .owl-animated-out - only for current item */
+
+
+/* This is very important class. Use z-index if you want move Out item above In item */
+
+.owl-animated-out {
+    z-index: 1
+}
+
+
+/* .owl-animated-in - only for upcoming item
+  /* This is very important class. Use z-index if you want move In item above Out item */
+
+.owl-animated-in {
+    z-index: 0
+}
+
+
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.owl-height {
+    transition: height .3s ease-in-out !important;
+    will-change: height;
+}
+
+#customBtn {
+    border-radius: 5px;
+    background: #F2F2F2;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    color: #4F4F4F;
+    padding: 10px;
+    transition: background-color .2s ease-in-out;
+    &:hover {
+        background-color: #eeeeee;
+    }
+}
+
+#customBtn:hover {
+    cursor: pointer;
+}
+
+span.icon {
+    background: url('../imgs/google.png') transparent 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+span.buttonText {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #4F4F4F;
+}
+
+
+/* End Global*/
